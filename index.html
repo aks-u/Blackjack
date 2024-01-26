@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Blackjack</h1>
+    <h2 id="msg-el">Play Blackjack?</h2>
+    <div id="game-info">
+        <p id="ai-cards-el"></p>
+        <p id="ai-sum"></p>
+        <br>
+        <p id="cards-el"></p>
+        <p id="sum-el"></p>
+    </div>
+    <div class="buttons">
+        <button id="start-btn" onclick="startGame()">DEAL</button>
+        <button id="new-btn" onclick="newCard()">HIT</button>
+        <button id="end-btn" onclick="endRound()">STAND</button>
+        <p id="bet-el">Current bet: 0</p>
+        <button id="bet-1" onclick="placeBet(1)">Bet 1€</button>
+        <button id="bet-5" onclick="placeBet(5)">Bet 5€</button>
+        <button id="bet-10" onclick="placeBet(10)">Bet 10€</button>
+        <br></br>
+        <input id="credit-input" type="text" placeholder="Add Money">
+        <button id="confirm-btn" type="button" onclick="wallet()">Confirm</button>
+    </div>
+    <p id="player-el"></p>
+    <script src="index.js"></script>
+</body>
+</html>
